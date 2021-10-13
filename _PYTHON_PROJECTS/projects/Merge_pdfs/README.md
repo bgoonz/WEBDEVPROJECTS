@@ -9,7 +9,3 @@ Run - "pip install PyPDF2"
 ## How to run the script
 
 It can be executed by running "python merge_pdfs.py"
-
-
-
-
