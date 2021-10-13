@@ -17,5 +17,4 @@
 
 ![Screenshot](shot.png)
 
-## *Author Name*
-[Mitesh](https://github.com/Mitesh2499)
+
