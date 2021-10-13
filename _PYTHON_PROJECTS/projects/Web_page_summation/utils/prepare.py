@@ -1,6 +1,6 @@
 import gzip
 
-default_path = '.'
+default_path = "."
 
 with gzip.open(default_path + "sumdata/train/train.article.txt.gz", "rb") as gz:
     with open(default_path + "sumdata/train/train.article.txt", "wb") as out:

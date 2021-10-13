@@ -3,10 +3,11 @@ import collections
 import pickle
 import numpy as np
 from nltk.tokenize import word_tokenize
-default_path = '.'
-train_article_path = '.'
-train_title_path = '.'
-valid_article_path = '.'
+
+default_path = "."
+train_article_path = "."
+train_title_path = "."
+valid_article_path = "."
 
 
 def clean_str(sentence):
@@ -56,8 +57,7 @@ def build_dict(step, toy=False):
     return word_dict, reversed_dict, article_max_len, summary_max_len
 
 
-def build_dataset(
-        step, word_dict, article_max_len, summary_max_len, toy=False):
+def build_dataset(step, word_dict, article_max_len, summary_max_len, toy=False):
     if step == "train":
         article_list = get_text_list(train_article_path, toy)
         title_list = get_text_list(train_title_path, toy)
@@ -76,7 +76,7 @@ def build_dataset(
     else:
         y = [word_tokenize(d) for d in title_list]
         y = [[word_dict.get(w, word_dict["<unk>"]) for w in d] for d in y]
-        y = [d[:(summary_max_len - 1)] for d in y]
+        y = [d[: (summary_max_len - 1)] for d in y]
         return x, y
 
 
@@ -99,7 +99,7 @@ def get_init_embedding(reversed_dict, embedding_size):
     print("Loading Glove vectors...")
     # word_vectors = KeyedVectors.load_word2vec_format(word2vec_file)
 
-    with open(default_path + "glove/model_glove_300.pkl", 'rb') as handle:
+    with open(default_path + "glove/model_glove_300.pkl", "rb") as handle:
         word_vectors = pickle.load(handle)
 
     word_vec_list = list()

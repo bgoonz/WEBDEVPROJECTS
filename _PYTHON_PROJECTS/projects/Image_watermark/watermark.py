@@ -50,4 +50,3 @@ for f in files:
     if os.path.isfile(os.path.abspath(f)):
         if f.endswith(".png") or f.endswith(".jpg"):
             watermark_photo(f, "output/" + f, watermark)
-

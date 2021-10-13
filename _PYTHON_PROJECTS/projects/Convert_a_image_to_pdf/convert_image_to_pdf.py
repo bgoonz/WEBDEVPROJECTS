@@ -20,4 +20,3 @@ elif os.path.isfile(filepath):
             f.write(img2pdf.convert(filepath))
 else:
     print("please input file or dir")
-

@@ -32,8 +32,9 @@ while True:
         # break from loop using loop
         # control statement "break"
         print(
-            f'CONGRATULATIONS! YOU HAVE GUESSED THE \
-            NUMBER {number} IN {chances} ATTEMPTS!')
+            f"CONGRATULATIONS! YOU HAVE GUESSED THE \
+            NUMBER {number} IN {chances} ATTEMPTS!"
+        )
         # Printing final statement using the f-strings method;
         break
 
@@ -51,4 +52,3 @@ while True:
 
     # Increase the value of chance by 1
     chances += 1
-    

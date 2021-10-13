@@ -1,10 +1,11 @@
 import tensorflow as tf
 from model import Model
 from utils import build_dict, build_dataset, batch_iter, get_text_list
-valid_article_path = '.'
-valid_title_path = '.'
+
+valid_article_path = "."
+valid_title_path = "."
 tf.reset_default_graph()
-default_path = '.'
+default_path = "."
 
 
 class args:
@@ -29,10 +30,10 @@ args.with_model = "store_true"
 
 print("Loading dictionary...")
 word_dict, reversed_dict, article_max_len, summary_max_len = build_dict(
-    "valid", args.toy)
+    "valid", args.toy
+)
 print("Loading validation dataset...")
-valid_x = build_dataset(
-    "valid", word_dict, article_max_len, summary_max_len, args.toy)
+valid_x = build_dataset("valid", word_dict, article_max_len, summary_max_len, args.toy)
 valid_x_len = [len([y for y in x if y != 0]) for x in valid_x]
 print("Loading article and reference...")
 article = get_text_list(valid_article_path, args.toy)
@@ -40,8 +41,9 @@ reference = get_text_list(valid_title_path, args.toy)
 
 with tf.Session() as sess:
     print("Loading saved model...")
-    model = Model(reversed_dict, article_max_len,
-                  summary_max_len, args, forward_only=True)
+    model = Model(
+        reversed_dict, article_max_len, summary_max_len, args, forward_only=True
+    )
     saver = tf.train.Saver(tf.global_variables())
     ckpt = tf.train.get_checkpoint_state(default_path + "saved_model/")
     saver.restore(sess, ckpt.model_checkpoint_path)
@@ -59,8 +61,7 @@ with tf.Session() as sess:
         }
 
         prediction = sess.run(model.prediction, feed_dict=valid_feed_dict)
-        prediction_output = [[reversed_dict[y]
-                              for y in x] for x in prediction[:, 0, :]]
+        prediction_output = [[reversed_dict[y] for y in x] for x in prediction[:, 0, :]]
         summary_array = []
         with open(default_path + "result.txt", "a") as f:
             for line in prediction_output:
@@ -73,4 +74,4 @@ with tf.Session() as sess:
                 summary_array.append(" ".join(summary))
                 # print(" ".join(summary), file=f)
 
-    print('Summaries have been generated')
+    print("Summaries have been generated")

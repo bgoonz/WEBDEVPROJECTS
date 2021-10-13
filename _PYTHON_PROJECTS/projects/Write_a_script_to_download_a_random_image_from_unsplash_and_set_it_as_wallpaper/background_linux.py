@@ -7,18 +7,18 @@ filename = "random.jpg"
 
 
 def download(url, file_name):
-    '''
+    """
     downloading the file and saving it
-    '''
+    """
     with open(file_name, "wb") as file:
         response = get(url)
         file.write(response.content)
 
 
 def setup(pathtofile):
-    '''
+    """
     setting the up file
-    '''
+    """
     system("nitrogen --set-auto {}".format(path.join(getcwd(), pathtofile)))
 
 

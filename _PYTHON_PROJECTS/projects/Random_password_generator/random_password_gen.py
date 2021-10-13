@@ -9,9 +9,9 @@ special = "@#$%&*"
 pass_len = int(input("Enter Password Length"))
 
 # length of password by 50-30-20 formula
-alpha_len = pass_len//2
-num_len = math.ceil(pass_len*30/100)
-special_len = pass_len-(alpha_len+num_len)
+alpha_len = pass_len // 2
+num_len = math.ceil(pass_len * 30 / 100)
+special_len = pass_len - (alpha_len + num_len)
 
 
 password = []

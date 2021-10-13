@@ -35,7 +35,7 @@ def send_mail():
 
     message = EmailMessage()
     message.set_content(body)
-    message['Subject'] = subject
+    message["Subject"] = subject
 
     with open("emails.csv", newline="") as csvfile:
         spamreader = csv.reader(csvfile, delimiter=" ", quotechar="|")

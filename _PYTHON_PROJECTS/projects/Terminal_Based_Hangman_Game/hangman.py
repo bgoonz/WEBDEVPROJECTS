@@ -4,7 +4,7 @@ from json import load
 
 # function to randomly get one word from words.py and convert the word to uppercase
 def get_word():
-    with open('words.json') as json_file:
+    with open("words.json") as json_file:
         data = load(json_file)
     wordArray = data["word_list"]
     word = random.choice(wordArray)
@@ -98,12 +98,15 @@ def play(word):
         print("Congrats, you guessed the word! You win!")
     # else means user lose the game.
     else:
-        print("Sorry, you ran out of tries. The word was " + word + ". Maybe next time!")
+        print(
+            "Sorry, you ran out of tries. The word was " + word + ". Maybe next time!"
+        )
 
 
 # function to display the format of hangman
 def display_hangman(tries):
-    stages = ["""
+    stages = [
+        """
                     --------
                     |      |
                     |      0
@@ -112,7 +115,7 @@ def display_hangman(tries):
                     |     / \\
                     -
               """,
-              """
+        """
                     --------
                     |      |
                     |      0
@@ -121,7 +124,7 @@ def display_hangman(tries):
                     |     / 
                     -
               """,
-              """
+        """
                     --------
                     |      |
                     |      0
@@ -130,7 +133,7 @@ def display_hangman(tries):
                     |    
                     -
               """,
-              """
+        """
                     --------
                     |      |
                     |      0
@@ -139,7 +142,7 @@ def display_hangman(tries):
                     |    
                     -
               """,
-              """
+        """
                     --------
                     |      |
                     |      0
@@ -148,7 +151,7 @@ def display_hangman(tries):
                     |    
                     -
               """,
-              """
+        """
                     --------
                     |      |
                     |      0
@@ -157,7 +160,7 @@ def display_hangman(tries):
                     |    
                     -
               """,
-              """
+        """
                     --------
                     |      |
                     |      
@@ -165,8 +168,8 @@ def display_hangman(tries):
                     |      
                     |    
                     -
-              """
-              ]
+              """,
+    ]
     return stages[tries]
 
 

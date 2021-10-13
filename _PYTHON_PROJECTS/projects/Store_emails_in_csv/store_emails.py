@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 credential_path = "credentials.txt"
 csv_path = "mails.csv"
 
-logger = logging.getLogger('imap_poller')
+logger = logging.getLogger("imap_poller")
 
 host = "imap.gmail.com"
 port = 993
@@ -67,9 +67,9 @@ def write_to_csv(mail, writer, N, total_no_of_mails):
                         # get the email email_body
                         email_body = part.get_payload(decode=True)
                         if email_body:
-                            email_text = get_text(email_body.decode('utf-8'))
+                            email_text = get_text(email_body.decode("utf-8"))
                     except Exception as exc:
-                        logger.warning('Caught exception: %r', exc)
+                        logger.warning("Caught exception: %r", exc)
                     if (
                         content_type == "text/plain"
                         and "attachment" not in content_disposition
@@ -86,14 +86,15 @@ def write_to_csv(mail, writer, N, total_no_of_mails):
                 # get the email email_body
                 email_body = msg.get_payload(decode=True)
                 if email_body:
-                    email_text = get_text(email_body.decode('utf-8'))
+                    email_text = get_text(email_body.decode("utf-8"))
 
             if email_text is not None:
                 # Write data in the csv file
                 row = [email_date, email_from, email_subject, email_text]
                 writer.writerow(row)
             else:
-                logger.warning('%s:%i: No message extracted', "INBOX", i)
+                logger.warning("%s:%i: No message extracted", "INBOX", i)
+
 
 def main():
     mail, messages = connect_to_mailbox()
@@ -111,7 +112,7 @@ def main():
         try:
             write_to_csv(mail, writer, N, total_no_of_mails)
         except Exception as exc:
-            logger.warning('Caught exception: %r', exc)
+            logger.warning("Caught exception: %r", exc)
 
 
 if __name__ == "__main__":
