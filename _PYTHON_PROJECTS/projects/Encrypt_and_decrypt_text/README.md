@@ -22,6 +22,6 @@ when the program has finished running.
 
 ![Screen shot](https://github.com/Python-World/python-mini-projects/blob/master/projects/Create_script_to_encode_and_decode_text/output.png)
 
-### Author Name
+
 
 [Gaodong](https://github.com/xlgd)

@@ -25,6 +25,4 @@ No need for additional installations.
 <!--Remove the below lines and add yours -->
 ![Example of script usage](Screenshot.png)
 
-## *Author Name*
-<!--Remove the below lines and add yours -->
-[Kushal Agrawal](https://github.com/kushal98)
+
