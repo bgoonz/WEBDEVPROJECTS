@@ -10,6 +10,6 @@ Run - "pip install PyPDF2"
 
 It can be executed by running "python merge_pdfs.py"
 
-## Author Name
 
-[ShivSt](https://github.com/ShivSt)
+
+
