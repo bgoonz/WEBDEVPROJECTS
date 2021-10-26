@@ -4,7 +4,7 @@ bs4==0.0.1
 CacheControl==0.12.6
 certifi==2019.11.28
 chardet==3.0.4
-colorama==0.4.3
+colorama==0.4.4
 contextlib2==0.6.0
 distlib==0.3.0
 distro==1.4.0
