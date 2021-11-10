@@ -11,6 +11,6 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "1.12.4"
   }
 }

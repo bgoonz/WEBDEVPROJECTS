@@ -13,7 +13,7 @@
   "version": "1.0.0",
   "main": "server.js",
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "2.0.7"
   },
   "keywords": [],
   "author": "",

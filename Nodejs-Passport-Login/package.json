@@ -19,7 +19,7 @@
     "passport-local": "^1.0.0"
   },
   "devDependencies": {
-    "dotenv": "^8.0.0",
-    "nodemon": "^1.19.1"
+    "dotenv": "8.0.0",
+    "nodemon": "1.19.1"
   }
 }

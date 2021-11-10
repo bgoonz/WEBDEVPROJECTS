@@ -17,12 +17,12 @@
   },
   "prettier": {},
   "dependencies": {
-    "@frontity/core": "^1.8.0",
-    "@frontity/html2react": "^1.4.0",
+    "@frontity/core": "1.8.0",
+    "@frontity/html2react": "1.4.0",
     "@frontity/mars-theme": "./packages/mars-theme",
-    "@frontity/tiny-router": "^1.2.1",
-    "@frontity/wp-source": "^1.8.4",
-    "frontity": "^1.11.1",
-    "react-spring": "^8.0.27"
+    "@frontity/tiny-router": "1.2.1",
+    "@frontity/wp-source": "1.8.4",
+    "frontity": "1.11.1",
+    "react-spring": "8.0.27"
   }
 }
