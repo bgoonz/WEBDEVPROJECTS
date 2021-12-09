@@ -9,7 +9,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.6.3",
+    "@chakra-ui/react": "1.7.3",
     "@emotion/react": "^11.4.0",
     "@emotion/styled": "^11.3.0",
     "@mapbox/rehype-prism": "^0.6.0",
