@@ -1,0 +1,81 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.2",
+  "hash": "431bbf810d7bf3945916",
+  "publicPath": "/static/",
+  "outputPath": "/workspace/WEBDEVPROJECTS/Frontity-Blog/build/static",
+  "assetsByChunkName": {
+    "list": "list.module.js",
+    "my-frontity-project": "my-frontity-project.module.js"
+  },
+  "assets": [
+    {
+      "name": "list.module.js",
+      "size": 47745,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "my-frontity-project.module.js",
+      "size": 5320886,
+      "chunks": [
+        "my-frontity-project"
+      ],
+      "chunkNames": [
+        "my-frontity-project"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "my-frontity-project": {
+      "chunks": [
+        "my-frontity-project"
+      ],
+      "assets": [
+        "my-frontity-project.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "my-frontity-project": {
+      "chunks": [
+        "my-frontity-project"
+      ],
+      "assets": [
+        "my-frontity-project.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
