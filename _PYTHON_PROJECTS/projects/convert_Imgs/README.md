@@ -26,6 +26,7 @@ $ pip install -r requirements.txt
   in the present directory tree recursively
   (i.e. will change format in images inside sub-directories too.)
 - JPG to PNG (single image)
+
   1. Copy the JPG image to the directory where `JPGtoPNG.py` exists
   2. Replace file name `naruto_first.jpg` inside `JPGtoPNG.py`
      (line 3) to input file name (JPG).
@@ -33,11 +34,12 @@ $ pip install -r requirements.txt
      output file name (PNG).
   4. Run following command:
 
+     ```
+     $ python JPGtoPNG.py
+     ```
 
-      ```
-      $ python JPGtoPNG.py
-      ```
 - PNG to JPG (single image)
+
   1. Copy the PNG image in directory where `PNGtoJPG.py` exists
   2. Replace file name `naruto_first.png` inside `PNGtoJPG.py`
      (line 3) to input file name (PNG).
@@ -45,10 +47,9 @@ $ pip install -r requirements.txt
      (line 4) to output file name (JPG).
   4. Run following command:
 
-
-      ```
-      $ python PNGtoJPG.py
-      ```
+     ```
+     $ python PNGtoJPG.py
+     ```
 
 ## _Author Name_
 

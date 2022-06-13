@@ -12,4 +12,3 @@ const packages = {
 };
 
 export default server({ packages });
-

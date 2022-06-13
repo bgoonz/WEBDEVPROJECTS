@@ -24,10 +24,14 @@ if (module["hot"]) {
     ],
     () => {
       const client = require("@frontity/core/src/client").default;
-      const frontity__mars_theme_default = require("@frontity/mars-theme/src/index").default;
-      const frontity__wp_source_default = require("@frontity/wp-source/src/index").default;
-      const frontity__tiny_router_default = require("@frontity/tiny-router/src/index").default;
-      const frontity__html2react_default = require("@frontity/html2react/src/index").default;
+      const frontity__mars_theme_default =
+        require("@frontity/mars-theme/src/index").default;
+      const frontity__wp_source_default =
+        require("@frontity/wp-source/src/index").default;
+      const frontity__tiny_router_default =
+        require("@frontity/tiny-router/src/index").default;
+      const frontity__html2react_default =
+        require("@frontity/html2react/src/index").default;
       const packages = {
         frontity__mars_theme_default,
         frontity__wp_source_default,

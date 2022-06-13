@@ -13,24 +13,16 @@
     {
       "name": "list.module.js",
       "size": 47745,
-      "chunks": [
-        "list"
-      ],
-      "chunkNames": [
-        "list"
-      ],
+      "chunks": ["list"],
+      "chunkNames": ["list"],
       "info": {},
       "emitted": false
     },
     {
       "name": "my-frontity-project.module.js",
       "size": 5320886,
-      "chunks": [
-        "my-frontity-project"
-      ],
-      "chunkNames": [
-        "my-frontity-project"
-      ],
+      "chunks": ["my-frontity-project"],
+      "chunkNames": ["my-frontity-project"],
       "info": {},
       "emitted": false
     }
@@ -38,34 +30,22 @@
   "filteredAssets": 0,
   "entrypoints": {
     "my-frontity-project": {
-      "chunks": [
-        "my-frontity-project"
-      ],
-      "assets": [
-        "my-frontity-project.module.js"
-      ],
+      "chunks": ["my-frontity-project"],
+      "assets": ["my-frontity-project.module.js"],
       "children": {},
       "childAssets": {}
     }
   },
   "namedChunkGroups": {
     "my-frontity-project": {
-      "chunks": [
-        "my-frontity-project"
-      ],
-      "assets": [
-        "my-frontity-project.module.js"
-      ],
+      "chunks": ["my-frontity-project"],
+      "assets": ["my-frontity-project.module.js"],
       "children": {},
       "childAssets": {}
     },
     "list": {
-      "chunks": [
-        "list"
-      ],
-      "assets": [
-        "list.module.js"
-      ],
+      "chunks": ["list"],
+      "assets": ["list.module.js"],
       "children": {},
       "childAssets": {}
     }
